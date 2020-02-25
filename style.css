@@ -1,0 +1,12 @@
+.form-set--block {
+  margin-bottom: 20px;
+}
+
+.form-set--block-item {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.form-set--block-item-last {
+  margin-bottom: 0;
+}
