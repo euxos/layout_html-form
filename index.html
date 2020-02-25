@@ -13,81 +13,85 @@
         method="post">
     <fieldset class="form-set--block">
       <legend>Personal information</legend>
-      <p class="form-set--block-item">
-        <label for="surname">Surname:</label>
+      <label class="form-set--block-item" for="surname">
+        Surname:
         <input id="surname" type="text" name="surname" autocomplete="off" minlength="2" required>
-      </p>
-      <p class="form-set--block-item">
-        <label for="name">Name:</label>
+      </label>
+      <label class="form-set--block-item" for="name">
+        Name:
         <input id="name" type="text" name="name" autocomplete="off" minlength="2" required>
-      </p>
-      <p class="form-set--block-item">
-        <label for="age">How old are You?</label>
+      </label>
+      <label class="form-set--block-item" for="age">
+        How old are You?
         <input id="age" type="number" name="age" value="12" min="1" max="100">
-      </p>
-      <p class="form-set--block-item">
-        <label for="birth">Full date of birth:</label>
+      </label>
+      <label class="form-set--block-item" for="birth">
+        Full date of birth:
         <input id="birth" type="date" name="birth">
-      </p>
-      <p class="form-set--block-item form-set--block-item-last">
-        <label for="accept">I accept the term of the agreement</label>
+      </label>
+      <label class="form-set--block-item form-set--block-item-last" for="accept">
+        I accept the term of the agreement
         <input id="accept" type="checkbox" name="accept">
-      </p>
+      </label>
     </fieldset>
     <fieldset class="form-set--block">
       <legend>Registration</legend>
-      <p class="form-set--block-item">
-        <label for="email">E-mail:</label>
+      <label class="form-set--block-item" for="email">
+        E-mail:
         <input id="email" type="email" name="email" required placeholder="email@example.com">
-      </p>
-      <p class="form-set--block-item form-set--block-item-last">
-        <label for="password">Password:</label>
+      </label>
+      <label class="form-set--block-item form-set--block-item-last" for="password">
+        Password:
         <input id="password" type="password" name="password" required>
-      </p>
+      </label>
     </fieldset>
     <fieldset class="form-set--block">
       <legend>An interesting fact about you!</legend>
       <p class="form-set--block-item">
-        <span>Do you love cats?</span>
-        <input id="love-cats-yes" type="radio" name="love-cats">
-        <label for="love-cats-yes">Yes</label>
-        <input id="love-cats-no" type="radio" name="love-cats">
-        <label for="love-cats-no">No</label>
+        Do you love cats?
+        <label for="love-cats-yes">
+          <input id="love-cats-yes" type="radio" name="love-cats">
+          Yes
+        </label>
+        <label for="love-cats-no">
+          <input id="love-cats-no" type="radio" name="love-cats">
+          No
+        </label>
       </p>
-      <p class="form-set--block-item">
-        <label for="love-color">What is your favorite color?</label>
+      <label class="form-set--block-item" for="love-color">
+        What is your favorite color?
         <input id="love-color" type="color" name="love-color">
-      </p>
-      <p class="form-set--block-item">
-        <label for="time-bed">What time do you go to bed?</label>
+      </label>
+      <label class="form-set--block-item" for="time-bed">
+        What time do you go to bed?
         <input id="time-bed" type="time" name="time-bed" step="1">
-      </p>
-      <p class="form-set--block-item">
-        <label for="love-cars">What are your favorite brand of cars?</label>
+      </label>
+      <label class="form-set--block-item" for="love-cars">
+        What are your favorite brand of cars?
         <select id="love-cars" name="love-cars" multiple>
           <option value="BMW">BMW</option>
           <option value="Audi">Audi</option>
           <option value="Lada">Lada</option>
         </select>
-      </p>
-      <p class="form-set--block-item form-set--block-item-last">
-        <label for="rate">How do you rate our work?</label>
+      </label>
+      <label class="form-set--block-item form-set--block-item-last" for="rate">
+        How do you rate our work?
         <input id="rate" type="range" name="rate" min="0" max="10">
-      </p>
+      </label>
     </fieldset>
     <fieldset class="form-set--block">
       <legend>Additional info:</legend>
-      <p class="form-set--block-item">
-        <label for="comments">Comments:</label>
+      <label class="form-set--block-item" for="comments">
+        Comments:
         <textarea id="comments" name="comments" autocomplete="off"></textarea>
-      </p>
-      <p class="form-set--block-item form-set--block-item-last">
-        <label for="recommend">Would you recommend us?</label>
+      </label>
+      <label class="form-set--block-item form-set--block-item-last" for="recommend">
+        Would you recommend us?
         <select id="recommend" name="recommend">
           <option value="yes" checked>yes</option>
           <option value="no">no</option>
         </select>
-      </p>
+      </label>
     </fieldset>
     <button class="form-set--submit" type="submit" onsubmit="onSubmit()">Submit</button>
   </form>
